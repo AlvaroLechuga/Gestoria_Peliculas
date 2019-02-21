@@ -7,5 +7,5 @@
 
 # Pasos para instalar:
 
--Instalar la Base de Datos en el servidor
--Iniciar el proyecto
+1. Instalar la Base de Datos en el servidor
+2. Iniciar el proyecto
