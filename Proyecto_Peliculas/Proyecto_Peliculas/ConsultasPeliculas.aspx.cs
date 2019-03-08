@@ -37,7 +37,10 @@ public partial class ConsultasPeliculas : System.Web.UI.Page
 
 		List<string> listaPeliculas = w.MostrarPelicula(opcion, texto);
 
+		ddResultados.Items.Clear();
+
 		ddResultados.Items.Add("--Selecciona--");
+
 		foreach(string pelicula in listaPeliculas)
 		{
 			ddResultados.Items.Add(pelicula);

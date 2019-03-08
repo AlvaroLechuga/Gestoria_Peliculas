@@ -53,6 +53,7 @@ public class BaseDatos
 		{
 			c.Connection = cnx;
 			c.CommandText = "SELECT * FROM `usuarios` WHERE IDAdmin = '" + usuario + "' AND Password = '"+password+"'";
+
 			d = c.ExecuteReader();
 			if (d.HasRows)
 			{

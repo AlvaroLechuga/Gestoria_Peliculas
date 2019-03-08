@@ -29,7 +29,7 @@
 					</asp:DropDownList>
 				</div>
 				<div class="form-group col-md-8">
-					<asp:TextBox ID="txtBusqueda" placeholder="Introduce el ID" class="form-control" runat="server"></asp:TextBox>
+					<asp:TextBox ID="txtBusqueda" placeholder="Introduce el criterio a buscar" class="form-control" runat="server"></asp:TextBox>
 				</div>
 				<div class="form-group col-md-1">
 					<asp:ImageButton ID="btnBuscar" runat="server" ImageUrl="~/Imagenes/search.png" OnClick="btnBuscar_Click" /><br />

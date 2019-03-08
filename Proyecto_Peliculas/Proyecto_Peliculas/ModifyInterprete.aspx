@@ -29,7 +29,6 @@
 					<asp:Button ID="btnBuscar" runat="server" class="btn btn-primary" Text="Buscar" OnClick="Button2_Click" /><br />
 					<br />
 				</div>
-				<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="El campo IDInterprete es obligatorio" ControlToValidate="txtId" ForeColor="Red"></asp:RequiredFieldValidator>
 				<div class="form-group col-md-6">
 					Nombre
 					<asp:TextBox ID="txtNombre" class="form-control" runat="server"></asp:TextBox>
@@ -40,10 +39,7 @@
 				</div>
 			</div>
 
-			<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtNombre" ErrorMessage="El campo Nombre es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
-
 			<asp:Button ID="btnModificar" class="btn btn-danger" runat="server" Text="MODIFICAR" Height="40px" OnClick="Button1_Click" />
-			<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEdad" ErrorMessage="El campo Edad es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
 		</div>
 		
 	</form>

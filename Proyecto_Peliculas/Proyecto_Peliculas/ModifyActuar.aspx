@@ -36,9 +36,6 @@
 					
 
 				</div>
-				<br />
-				<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="El campo IdPelicula es obligatorio" ControlToValidate="txtCodPelicula" ForeColor="Red"></asp:RequiredFieldValidator>
-				<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="El campo IdActor es obligatorio" ControlToValidate="txtCodActor" ForeColor="Red"></asp:RequiredFieldValidator>
 				
 				<br />
 				

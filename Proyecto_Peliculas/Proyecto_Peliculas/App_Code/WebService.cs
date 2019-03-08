@@ -29,7 +29,6 @@ public class WebService : System.Web.Services.WebService
 		if(baseDatos.ComprobarUsuario(usuario, password))
 		{
 			baseDatos.Desconectar();
-			Session["usuario"] = usuario;
 			return true;
 		}
 		else

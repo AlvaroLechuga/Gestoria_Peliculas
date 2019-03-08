@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,7 +10,6 @@ public partial class index : System.Web.UI.Page
 {
 	protected void Page_Load(object sender, EventArgs e)
 	{
-
 	}
 
 	protected void Button1_Click(object sender, EventArgs e)
@@ -20,14 +20,14 @@ public partial class index : System.Web.UI.Page
 		WebService w = new WebService();
 		if(w.ComprobarUsuario(usuario, password))
 		{
-			if (usuario.Equals("admin"))
-			{
-				Response.Redirect("SeleccionarCrearModificar.aspx");
-			}
-			else
-			{
-				Response.Redirect("ConsultasPeliculas.aspx");
-			}
+			Session["usuario"] = usuario;
+			Response.Redirect("SeleccionarCrearModificar.aspx");
 		}
+	}
+
+	protected void btnInvitado_Click(object sender, EventArgs e)
+	{
+		Session["usuario"] = "Invitado";
+		Response.Redirect("ConsultasPeliculas.aspx");
 	}
 }

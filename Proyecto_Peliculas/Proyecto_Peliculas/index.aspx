@@ -28,10 +28,11 @@
 				<div class="form-group">
 					<asp:TextBox ID="txtPassword" type="password" CssClass="form-control" placeholder="Introduce la contraseña" runat="server"></asp:TextBox>
 				</div>
-				<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsuario" ErrorMessage="El campo Usuario es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
+				
 				<asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Iniciar Sesión" OnClick="Button1_Click" />
-				<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="El campo Password es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
+				<asp:Button ID="btnInvitado" class="btn btn-primary" runat="server" Text="Invitado" OnClick="btnInvitado_Click" />
 			</div>
+			
 		</form>
 	</div>
 </body>
